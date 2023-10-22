@@ -1,0 +1,61 @@
+html {
+    font-family: "Cabin"
+}
+
+main {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    heihgt: 100%;
+}
+
+.splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.splash h1 {
+    font-size: 4em;
+    font-weight: normal;
+    margin-bottom: 0.3em;
+}
+
+h1::after {
+    margin-left: 5px;
+    color: #84ff3d;
+    content: '.';
+    animation: blink 1s linear infinite;
+
+}
+
+@keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.splash h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    background: -webkit-gradient(linear,left top,right top,from(#84ff3d),to(#2eabff));
+    background: linear-gradient(90deg,#84ff3d,#2eabff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.splash p {
+    color: #bebebe;
+    line-height: 1.5em;
+}
